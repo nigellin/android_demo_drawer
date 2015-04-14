@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- INPUT FIELD styles -->
+
+	<style name="field" parent="layout_wrap_content">
+		<item name="android:layout_width">@dimen/field_width</item>
+		<item name="android:layout_marginTop">@dimen/gap_smaller</item>
+		<item name="android:layout_marginBottom">@dimen/gap_smaller</item>
+		<item name="android:layout_marginStart">@dimen/gap</item>
+		<item name="android:layout_marginEnd">@dimen/gap</item>
+		<item name="android:textSize">@dimen/text</item>
+		<item name="android:gravity">center</item>
+		<item name="android:inputType">text</item>
+		<item name="android:singleLine">true</item>
+	</style>
+
+	<style name="field_view_only" parent="field">
+		<item name="android:textColor">#000</item>
+		<item name="android:textStyle">bold|italic</item>
+		<item name="android:layout_width">@dimen/field_width_small</item>
+		<item name="android:enabled">false</item>
+	</style>
+
+	<!-- INPUT FIELDS -->
+
+	<string name="field_login">Username/Email</string>
+	<string name="field_username">Username</string>
+	<string name="field_password">Password</string>
+	<string name="field_password_">Password Confirm</string>
+	<string name="field_role">Role</string>
+	<string name="field_name">Name</string>
+	<string name="field_email">Email</string>
+	<string name="field_date_created">Date Created</string>
+	<string name="field_date_modified">Date Modified</string>
+	<string name="field_notification">Message</string>
+
+	<string name="field_url">Enter a URL</string>
+	<string name="field_file_name">Filename</string>
+	<string name="field_file_content">Content</string>
+
+
+	<!-- DRAWER TEXTS -->
+
+	<string name="text_drawer_home">Home</string>
+	<string name="text_drawer_profile">User Profile</string>
+	<string name="text_drawer_device_info">Device Info</string>
+	<string name="text_drawer_sign_in">Sign In</string>
+	<string name="text_drawer_sign_up">Sign Up</string>
+	<string name="text_drawer_sign_out">Sign Out</string>
+	<string name="text_drawer_notification">Notification</string>
+	<string name="text_drawer_canvas">Canvas</string>
+	<string name="text_drawer_gestures">Gestures</string>
+	<string name="text_drawer_web">Web</string>
+	<string name="text_drawer_sprite_sheet">Animate - Sprite Sheet</string>
+	<string name="text_drawer_file_manage">Manage File</string>
+	<string name="text_drawer_dial">Dial</string>
+
+	<!-- DEVICE INFO TEXTS -->
+
+	<string name="label_device_id">ID</string>
+	<string name="label_device_model">Model</string>
+	<string name="label_device_manufacture">Manufacture</string>
+	<string name="label_device_product">Product</string>
+	<string name="label_device_version">Version</string>
+	<string name="label_device_os">OS</string>
+	<string name="label_device_display">Display</string>
+	<string name="label_device">Device</string>
+	<string name="label_device_hardware">Hardware</string>
+	<string name="label_phone">Phone Number</string>
+	<string name="label_message">SMS Message</string>
+
+	<!-- BUTTONS -->
+
+	<string name="button_sign_out">Sign Out</string>
+	<string name="button_cancel">Cancel</string>
+	<string name="button_stop">Stop</string>
+	<string name="button_save">Save</string>
+	<string name="button_update">Update</string>
+	<string name="button_clear">Clear</string>
+	<string name="button_enable">Enable</string>
+	<string name="button_disable">Disable</string>
+
+	<string name="button_notification_start">Notify</string>
+	<string name="button_countdown">Countdown Notify</string>
+
+
+	<string name="button_http_get">Get</string>
+
+	<string name="button_edit">Edit</string>
+	<string name="button_send">Send</string>
+	<string name="button_enter">Enter</string>
+
+	<string name="button_call">Call</string>
+</resources>

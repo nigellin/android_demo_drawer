@@ -1,0 +1,7 @@
+<com.practice.android.demo.drawer.views.SpriteSheetView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/view_sprite_sheet"
+	tools:context="com.practice.android.demo.drawer.fragments.SpriteFragment"/>

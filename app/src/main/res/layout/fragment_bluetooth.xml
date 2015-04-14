@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="@dimen/gap_small"
+              android:orientation="vertical"
+              tools:context="com.practice.android.demo.drawer.fragments.BluetoothFragment">
+
+    <LinearLayout
+        style="@style/layout_match_parent_width"
+        android:gravity="center">
+        <TextView
+            style="@style/text_label"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/gap_small"
+            android:text="@string/bluetooth_enable"/>
+
+        <Switch
+            style="@style/layout_wrap_content"
+            android:id="@+id/view_switch"
+            android:layout_marginEnd="@dimen/gap_small"
+            android:layout_gravity="end|center_vertical"/>
+
+        <ImageButton
+            style="@style/button_image"
+            android:enabled="false"
+            android:src="@drawable/refresh"
+            android:id="@+id/button_refresh"/>
+    </LinearLayout>
+
+    <ListView
+        style="@style/layout_match_parent_width"
+        android:id="@+id/view_list"/>
+</LinearLayout>

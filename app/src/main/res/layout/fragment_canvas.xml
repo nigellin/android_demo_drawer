@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 style="@style/layout_match_parent"
+			 android:background="@drawable/border"
+			 android:orientation="vertical"
+			 android:padding="@dimen/gap_small">
+	<com.practice.android.demo.drawer.views.CanvasView
+		style="@style/layout_match_parent"
+		android:id="@+id/view_canvas"/>
+
+	<LinearLayout
+		style="@style/layout_match_parent_width"
+		android:layout_margin="@dimen/gap_small"
+		android:weightSum="10"
+		android:layout_gravity="bottom">
+
+		<SeekBar
+			android:layout_gravity="center_vertical"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="6"
+			android:id="@+id/seekbar_stroke_width"/>
+
+		<Spinner
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="2"
+			android:id="@+id/spinner_colors"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="2"
+			android:text="@string/button_clear"
+			android:onClick="onCanvasClear"/>
+	</LinearLayout>
+</FrameLayout>

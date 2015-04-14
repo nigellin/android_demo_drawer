@@ -1,0 +1,40 @@
+<resources>
+	<style name="text" parent="layout_wrap_content">
+		<item name="android:textSize">@dimen/text</item>
+		<item name="android:textColor">#000</item>
+	</style>
+
+	<style name="text_center" parent="layout_wrap_content">
+		<item name="android:layout_gravity">center</item>
+	</style>
+
+	<style name="text_label" parent="text">
+		<item name="android:padding">@dimen/gap_small</item>
+	</style>
+
+	<style name="text_label_end" parent="text_label">
+		<item name="android:gravity">end</item>
+	</style>
+
+	<style name="text_label_value" parent="text_label">
+		<item name="android:textStyle">italic|bold</item>
+	</style>
+
+	<string name="app_name">Drawer Demo</string>
+	<string name="action_settings">Settings</string>
+
+	<string name="drawer_open">Show Sidebar</string>
+	<string name="drawer_close">Hide Sidebar</string>
+	<string name="text_gestures">Logging During Touches</string>
+
+	<string name="title_activity_setting">Settings</string>
+
+	<string name="title_activity_splash">SplashActivity</string>
+
+	<string name="text_home">Android Demo is Here</string>
+
+	<string name="text_drawer_sensor">Sensor</string>
+
+	<string name="text_drawer_bluetooth">Bluetooth</string>
+	<string name="bluetooth_enable">Enable Bluetooth Service</string>
+</resources>

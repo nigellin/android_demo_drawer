@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent"
+			 android:orientation="vertical"
+			 android:gravity="center_horizontal"
+			 tools:context="com.practice.android.demo.drawer.fragments.FileManageFragment">
+
+	<EditText
+		style="@style/field"
+		android:layout_margin="@dimen/gap_small"
+		android:id="@+id/field_file_name"
+		android:singleLine="true"
+		android:hint="@string/field_file_name"/>
+
+	<EditText
+		style="@style/field"
+		android:lines="3"
+		android:gravity="start"
+		android:layout_width="match_parent"
+		android:id="@+id/field_file_content"
+		android:singleLine="false"
+		android:layout_gravity="center"
+		android:inputType="textMultiLine"
+		android:hint="@string/field_file_content"/>
+
+	<LinearLayout
+		android:gravity="center"
+		style="@style/layout_match_parent_width">
+		<ImageButton
+			style="@style/button_image"
+			android:id="@+id/button_file_action"
+			android:src="@drawable/file_add"/>
+
+		<ImageButton
+			style="@style/button_image"
+			android:id="@+id/button_file_delete"
+			android:src="@drawable/file_delete"/>
+	</LinearLayout>
+
+	<ListView
+		style="@style/layout_match_parent"
+		android:padding="@dimen/gap"
+		android:choiceMode="singleChoice"
+		android:id="@+id/view_list"/>
+</LinearLayout>

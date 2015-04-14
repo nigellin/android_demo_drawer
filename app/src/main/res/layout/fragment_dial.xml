@@ -1,0 +1,31 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="@dimen/gap_small"
+             tools:context="com.practice.android.demo.drawer.fragments.DialFragment">
+	<TableRow>
+		<EditText
+			style="@style/field"
+			android:inputType="phone"
+			android:hint="@string/label_phone"
+			android:id="@+id/field_phone"/>
+		<Button
+			style="@style/layout_wrap_content"
+			android:text="@string/button_call"
+			android:id="@+id/button_call"/>
+	</TableRow>
+
+	<TableRow>
+		<EditText
+			style="@style/field"
+			android:layout_width="match_parent"
+			android:inputType="textMultiLine"
+			android:hint="@string/label_message"
+			android:id="@+id/field_message"/>
+		<Button
+			style="@style/layout_wrap_content"
+			android:id="@+id/button_send"
+			android:text="@string/button_send"/>
+	</TableRow>
+</TableLayout>

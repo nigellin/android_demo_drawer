@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 style="@style/layout_match_parent"
+			 android:padding="@dimen/gap_smaller"
+			 android:orientation="vertical"
+			 tools:context="com.practice.android.demo.drawer.fragments.WebFragment">
+
+	<LinearLayout
+		android:layout_margin="@dimen/gap_small"
+		android:gravity="center"
+		style="@style/layout_match_parent_width">
+		<EditText
+			style="@style/field"
+			android:id="@+id/field_url"
+			android:inputType="textUri"
+			android:singleLine="true"
+			android:hint="@string/field_url"/>
+
+		<ImageButton
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:adjustViewBounds="true"
+			android:scaleType="fitCenter"
+			android:id="@+id/button_clear"
+			android:visibility="gone"
+			android:src="@drawable/arrow_cross"/>
+
+		<ImageButton
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:adjustViewBounds="true"
+			android:scaleType="fitCenter"
+			android:id="@+id/button_enter"
+			android:src="@drawable/arrow_right"/>
+	</LinearLayout>
+
+	<WebView
+		android:background="@drawable/border"
+		style="@style/layout_match_parent"
+		android:id="@+id/view_web">
+	</WebView>
+</LinearLayout>

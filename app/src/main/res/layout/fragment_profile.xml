@@ -1,0 +1,116 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 style="@style/layout_match_parent"
+			 tools:context="com.practice.android.demo.drawer.fragments.DeviceInfoFragment"
+			 android:gravity="center_vertical">
+
+	<TableRow android:gravity="center_horizontal">
+		<TextView
+			style="@style/text_label_end"
+			android:labelFor="@+id/field_username"
+			android:text="@string/field_username"/>
+
+		<EditText
+			style="@style/field_view_only"
+			android:inputType="textPersonName"
+			android:id="@id/field_username"/>
+	</TableRow>
+
+	<TableRow android:gravity="center_horizontal">
+		<TextView
+			style="@style/text_label_end"
+			android:labelFor="@+id/field_email"
+			android:text="@string/field_email"/>
+		<EditText
+			style="@style/field_view_only"
+			android:inputType="textEmailAddress"
+			android:id="@id/field_email"/>
+	</TableRow>
+
+	<TableRow android:gravity="center_horizontal">
+		<TextView
+			style="@style/text_label_end"
+			android:labelFor="@+id/field_name"
+			android:text="@string/field_name"/>
+
+		<EditText
+			style="@style/field_view_only"
+			android:inputType="textCapWords|textPersonName"
+			android:id="@id/field_name"/>
+	</TableRow>
+
+	<TableRow android:gravity="center_horizontal">
+		<TextView
+			style="@style/text_label_end"
+			android:labelFor="@+id/field_role"
+			android:text="@string/field_role"/>
+		<EditText
+			style="@style/field_view_only"
+			android:id="@id/field_role"/>
+	</TableRow>
+
+	<TableRow android:gravity="center_horizontal">
+		<TextView
+			style="@style/text_label_end"
+			android:labelFor="@+id/field_password"
+			android:text="@string/field_password"/>
+		<EditText
+			style="@style/field_view_only"
+			android:inputType="textPassword"
+			android:id="@id/field_password"/>
+	</TableRow>
+
+	<TableRow android:gravity="center_horizontal"
+			  android:visibility="gone"
+			  android:id="@+id/table_row_password_">
+		<TextView
+			style="@style/text_label_end"
+			android:labelFor="@+id/field_password_"
+			android:text="@string/field_password"/>
+		<EditText
+			style="@style/field_view_only"
+			android:inputType="textPassword"
+			android:id="@id/field_password_"/>
+	</TableRow>
+
+	<TableRow android:gravity="center_horizontal">
+		<TextView
+			style="@style/text_label_end"
+			android:labelFor="@+id/field_date_modified"
+			android:text="@string/field_date_modified"/>
+		<EditText
+			style="@style/field_view_only"
+			android:inputType="text|datetime"
+			android:id="@id/field_date_modified"/>
+	</TableRow>
+
+	<TableRow android:gravity="center_horizontal">
+		<TextView
+			style="@style/text_label_end"
+			android:labelFor="@+id/field_date_created"
+			android:text="@string/field_date_created"/>
+		<EditText
+			style="@style/field_view_only"
+			android:inputType="text|datetime"
+			android:id="@id/field_date_created"/>
+	</TableRow>
+
+	<TableRow android:gravity="center_horizontal">
+		<LinearLayout
+			style="@style/layout_match_parent_width"
+			android:gravity="end"
+			android:layout_span="2"
+			android:layout_marginEnd="@dimen/gap_small">
+			<Button
+				style="@style/layout_wrap_content"
+				android:text="@string/button_update"
+				android:id="@+id/button_save"
+				android:visibility="invisible"/>
+			<ToggleButton
+				style="@style/layout_wrap_content"
+				android:id="@+id/button_action"
+				android:textOff="@string/button_edit"
+				android:textOn="@string/button_cancel"/>
+		</LinearLayout>
+	</TableRow>
+</TableLayout>

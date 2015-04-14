@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  tools:context="com.practice.android.demo.drawer.fragments.GesturesFragment"
+			  style="@style/layout_match_parent"
+			  android:padding="@dimen/gap"
+			  android:orientation="vertical">
+	<ScrollView
+		android:background="@drawable/border"
+		android:padding="@dimen/gap"
+		style="@style/layout_match_parent"
+		android:id="@+id/view_scroll">
+		<TextView
+			style="@style/text"
+			android:textStyle="bold"
+			android:textSize="@dimen/text_large"
+			android:id="@+id/text_gestures"/>
+	</ScrollView>
+
+	<TextView
+		style="@style/text_center"
+		android:textSize="@dimen/text_large"
+		android:textStyle="italic"
+		android:textColor="#00aa00"
+		android:text="@string/text_gestures"/>
+	<Button
+		style="@style/layout_wrap_content"
+		android:text="@string/button_clear"
+		android:layout_margin="@dimen/gap"
+		android:id="@+id/button_clear"
+		android:layout_gravity="bottom|center_horizontal"/>
+</FrameLayout>

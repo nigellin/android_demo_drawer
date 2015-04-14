@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 style="@style/layout_match_parent"
+			 tools:context="com.practice.android.demo.drawer.fragments.SignInFragment">
+
+	<LinearLayout
+		android:id="@+id/layout_fields"
+		android:orientation="vertical"
+		android:background="@drawable/border"
+		android:layout_marginBottom="@dimen/gap"
+		style="@style/layout_center">
+		<EditText
+			style="@style/field"
+			android:inputType="text|textEmailAddress"
+			android:id="@+id/field_id"
+			android:hint="@string/field_login"/>
+		<EditText
+			style="@style/field"
+			android:inputType="textPassword"
+			android:id="@+id/field_password"
+			android:hint="@string/field_password"/>
+	</LinearLayout>
+	<LinearLayout
+		style="@style/layout_wrap_content"
+		android:layout_below="@id/layout_fields"
+		android:layout_alignEnd="@id/layout_fields">
+
+		<Button
+			style="@style/margin_horizon"
+			android:onClick="onSignIn"
+			android:text="@string/text_drawer_sign_in"/>
+
+		<Button
+			style="@style/layout_wrap_content"
+			android:onClick="onClear"
+			android:text="@string/button_clear"/>
+	</LinearLayout>
+</RelativeLayout>

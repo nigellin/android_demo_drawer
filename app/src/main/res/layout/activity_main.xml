@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	style="@style/layout_match_parent"
+	tools:context=".MainActivity"
+	android:id="@+id/layout_drawer">
+
+	<LinearLayout
+		style="@style/layout_match_parent"
+		android:background="#fff"
+		android:orientation="vertical"
+		android:id="@+id/layout_dynamic"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	<fragment
+		class="com.practice.android.demo.drawer.fragments.DrawerFragment"
+		style="@style/drawer"
+		android:id="@+id/fragment_drawer"/>
+</android.support.v4.widget.DrawerLayout>

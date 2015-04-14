@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="error_require">Cannot be blank</string>
+	<string name="error_compare" formatted="false">Not matched to %s</string>
+	<string name="error_pattern" formatted="false">Invalid %s format</string>
+	<string name="error_length_min" formatted="false">Requires %d characters at least</string>
+	<string name="error_length_max" formatted="false">Requires %d characters at most</string>
+	<string name="error_length_exact" formatted="false">Requires %d characters exactly</string>
+	<string name="error_length_between" formatted="false">Requires %d to %d characters</string>
+	<string name="error_internal">Internal error occurred</string>
+
+	<string name="error_sign_in">Invalid Username/Email or Password</string>
+	<string name="error_sign_up_duplicate" formatted="false">%s \'%s\' is taken already</string>
+
+	<string name="info_sign_in">Sign In Successful</string>
+	<string name="info_sign_up">Sign Up Successful</string>
+	<string name="info_sign_out">Sign Out Successful</string>
+</resources>

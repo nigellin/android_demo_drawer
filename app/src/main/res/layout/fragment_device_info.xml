@@ -1,0 +1,79 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  style="@style/layout_match_parent"
+			  tools:context="com.practice.android.demo.drawer.fragments.DeviceInfoFragment"
+			  android:gravity="center_horizontal|center_vertical"
+			  android:stretchColumns="*">
+	<TableRow>
+		<TextView
+			style="@style/text_label_end"
+			android:text="@string/label_device"/>
+		<TextView
+			style="@style/text_label_value"
+			android:id="@+id/text_device"/>
+	</TableRow>
+
+	<TableRow>
+		<TextView
+			style="@style/text_label_end"
+			android:text="@string/label_device_id"/>
+		<TextView
+			style="@style/text_label_value"
+			android:id="@+id/text_device_id"/>
+	</TableRow>
+
+	<TableRow>
+		<TextView
+			style="@style/text_label_end"
+			android:text="@string/label_device_product"/>
+		<TextView
+			style="@style/text_label_value"
+			android:textStyle="bold|italic"
+			android:id="@+id/text_device_product"/>
+	</TableRow>
+
+	<TableRow>
+		<TextView
+			style="@style/text_label_end"
+			android:text="@string/label_device_model"/>
+		<TextView
+			style="@style/text_label_value"
+			android:id="@+id/text_device_model"/>
+	</TableRow>
+
+	<TableRow>
+		<TextView
+			style="@style/text_label_end"
+			android:text="@string/label_device_hardware"/>
+		<TextView
+			style="@style/text_label_value"
+			android:id="@+id/text_device_hardware"/>
+	</TableRow>
+
+	<TableRow>
+		<TextView
+			style="@style/text_label_end"
+			android:text="@string/label_device_manufacture"/>
+		<TextView
+			style="@style/text_label_value"
+			android:id="@+id/text_device_manufacture"/>
+	</TableRow>
+
+	<TableRow>
+		<TextView
+			style="@style/text_label_end"
+			android:text="@string/label_device_os"/>
+		<TextView
+			style="@style/text_label_value"
+			android:id="@+id/text_device_os"/>
+	</TableRow>
+
+	<TableRow>
+		<TextView
+			style="@style/text_label_end"
+			android:text="@string/label_device_version"/>
+		<TextView
+			style="@style/text_label_value"
+			android:id="@+id/text_device_version"/>
+	</TableRow>
+</TableLayout>

@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 style="@style/layout_match_parent"
+			 tools:context="com.practice.android.demo.drawer.fragments.SignUpFragment">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:id="@+id/layout_fields"
+		style="@style/layout_center"
+		android:layout_marginBottom="@dimen/gap"
+		android:background="@drawable/border">
+
+		<EditText
+			style="@style/field"
+			android:id="@+id/field_username"
+			android:hint="@string/field_username"/>
+
+		<EditText
+			style="@style/field"
+			android:inputType="textEmailAddress"
+			android:id="@+id/field_email"
+			android:hint="@string/field_email"/>
+
+		<EditText
+			style="@style/field"
+			android:inputType="textCapWords|textPersonName"
+			android:id="@+id/field_name"
+			android:hint="@string/field_name"/>
+
+		<EditText
+			style="@style/field"
+			android:inputType="textPassword"
+			android:id="@+id/field_password"
+			android:hint="@string/field_password"/>
+
+		<EditText
+			style="@style/field"
+			android:inputType="textPassword"
+			android:id="@+id/field_password_"
+			android:hint="@string/field_password_"/>
+	</LinearLayout>
+	<LinearLayout
+		style="@style/layout_wrap_content"
+		android:layout_alignEnd="@id/layout_fields"
+		android:layout_below="@id/layout_fields">
+		<Button
+			style="@style/margin_horizon"
+			android:onClick="onSignUp"
+			android:text="@string/text_drawer_sign_up"/>
+
+		<Button
+			style="@style/layout_wrap_content"
+			android:onClick="onClear"
+			android:text="@string/button_clear"/>
+	</LinearLayout>
+</RelativeLayout>

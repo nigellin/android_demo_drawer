@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 style="@style/layout_match_parent"
+			 android:orientation="vertical"
+			 tools:context="com.practice.android.demo.drawer.fragments.HomeFragment"
+			 android:gravity="center">
+
+	<AnalogClock
+		style="@style/layout_wrap_content"
+		android:layout_margin="@dimen/gap"/>
+
+	<TextClock
+		style="@style/layout_wrap_content"
+		android:textStyle="bold|italic"
+		android:textSize="@dimen/text_larger"
+		android:layout_margin="@dimen/gap"
+		android:id="@+id/clock_text"/>
+
+	<TextView
+		style="@style/text"
+		android:textSize="@dimen/text_larger"
+		android:layout_margin="@dimen/gap"
+		android:id="@+id/text_home_content"
+		android:text="@string/text_home"/>
+</LinearLayout>

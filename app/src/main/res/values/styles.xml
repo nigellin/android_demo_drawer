@@ -1,0 +1,80 @@
+<resources>
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
+
+	<style name="layout_wrap_content">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<style name="layout_match_parent">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">match_parent</item>
+	</style>
+
+
+
+	<style name="layout_match_parent_width" parent="layout_wrap_content">
+		<item name="android:layout_width">match_parent</item>
+	</style>
+
+	<style name="layout_fill_parent_width" parent="layout_wrap_content">
+		<item name="android:layout_width">fill_parent</item>
+	</style>
+
+	<style name="margin_horizon" parent="layout_wrap_content">
+		<item name="android:layout_marginStart">@dimen/gap</item>
+		<item name="android:layout_marginEnd">@dimen/gap</item>
+		<item name="android:layout_marginLeft">@dimen/gap</item>
+		<item name="android:layout_marginRight">@dimen/gap</item>
+	</style>
+
+	<style name="margin_vertical" parent="layout_wrap_content">
+		<item name="android:layout_marginTop">@dimen/gap</item>
+		<item name="android:layout_marginBottom">@dimen/gap</item>
+	</style>
+
+	<style name="padding_horizon" parent="layout_wrap_content">
+		<item name="android:paddingStart">@dimen/gap</item>
+		<item name="android:paddingEnd">@dimen/gap</item>
+		<item name="android:paddingLeft">@dimen/gap</item>
+		<item name="android:paddingRight">@dimen/gap</item>
+	</style>
+
+	<style name="padding_vertical" parent="layout_wrap_content">
+		<item name="android:paddingTop">@dimen/gap</item>
+		<item name="android:paddingBottom">@dimen/gap</item>
+	</style>
+
+	<style name="layout_weight" parent="layout_wrap_content">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+
+	<style name="layout_weight_2" parent="layout_weight">
+		<item name="android:layout_weight">2</item>
+	</style>
+
+	<style name="layout_center" parent="layout_wrap_content">
+		<item name="android:layout_centerHorizontal">true</item>
+		<item name="android:layout_centerVertical">true</item>
+	</style>
+
+	<style name="drawer">
+		<item name="android:background">#000</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:layout_width">@dimen/width_drawer</item>
+		<item name="android:layout_gravity">start</item>
+	</style>
+
+	<style name="drawer_content" parent="layout_match_parent_width">
+		<item name="android:divider">#aaa</item>
+	</style>
+
+	<style name="button_image">
+		<item name="android:layout_margin">@dimen/gap_small</item>
+		<item name="android:layout_height">50dp</item>
+		<item name="android:layout_width">50dp</item>
+		<item name="android:adjustViewBounds">true</item>
+		<item name="android:scaleType">fitCenter</item>
+	</style>
+</resources>
